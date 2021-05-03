@@ -16,7 +16,7 @@
     <title>Testo Canzone</title>
 </head>
  <body>
-
+  <h1>Testo canzone</h1>
   <p><?php echo $change_paragraph ?> </p>
   <p><?php echo 'La lunghezza del paragrafo è ' .strlen($change_paragraph) ?> </p>
         
