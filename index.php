@@ -1,9 +1,9 @@
 <?php
- $bad_words = $_GET["block"];
+ $bad_word = $_GET["block"];
 
- $paragraph = "Grande figlio di puttana, ma che amico per me, uno che ruba anche la luna se la deve dare a te, eeh...Grande però, che grande figlio di puttana. Eeeh, aspetterò ancora un'altra settimana. Adesso so anche il perché, perché sei un figlio di puttana. Ed è per questo che a te la gente tutto ti perdona. Perché dicono: Guarda come suona la chitarra.....Quel grande figlio di puttana!!!";
+ $paragraph = "Grande figlio di $bad_word, ma che amico per me, uno che ruba anche la luna se la deve dare a te, eeh...Grande però, che grande figlio di $bad_word. Eeeh, aspetterò ancora un'altra settimana. Adesso so anche il perché, perché sei un figlio di $bad_word. Ed è per questo che a te la gente tutto ti perdona. Perché dicono: Guarda come suona la chitarra.....Quel grande figlio di $bad_word!!!";
 
- $change_paragraph = str_replace('puttana', $bad_words, $paragraph);
+ $change_paragraph = str_replace($bad_word,'***', $paragraph);
  
 ?>
 
